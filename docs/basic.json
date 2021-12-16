@@ -10,7 +10,10 @@
       "url": "web.com"
     }
   },
-  "servers": {
-    "$ref": "servers.json#/servers" 
-  }
+  "servers": [
+    {
+        "url": "http://localhost:3000",
+        "description": "local server" 
+    }
+]
 }

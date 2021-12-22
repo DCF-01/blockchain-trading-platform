@@ -22,14 +22,25 @@
     ],
     "tags": [
         {
-            "name": "Users",
-            "description":"A list of users."
+            "name": "Test"
         },
         {
-            "name": "TestTag"
+            "name": "Users",
+            "description":"A list of users."
         }
     ],
     "paths": {
+        "/ping": {
+            "get": {
+                "tags": ["Test"],
+                "description": "Test description",
+                "responses": {
+                    "200": {
+                        "description": "Test"
+                    }
+                }
+            }
+        },
         "/users": {
             "get": {
                 "tags": ["Users"],

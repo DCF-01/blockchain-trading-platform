@@ -12,7 +12,7 @@ var app = express();
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('../docs/basic.json');
 
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
+app.use('/api', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
